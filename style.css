@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Karla-regular";
+  src: url("./Karla/static/Karla-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Karla-bold";
+  src: url("./Karla/static/Karla-Bold.ttf") format("truetype");
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Karla-regular";
+  background-color: hsl(204, 43%, 93%);
+}
+
+h1 {
+  font-family: "Karla-bold";
+}
+
+.first-box,
+.second-box,
+.third-box {
+  gap: 0.9rem;
+  padding: 1.5rem 1.35rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.first-container {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.second-container {
+  width: 100%;
+  height: 66%;
+}
+
+/*? First Box Styling */
+.first-box {
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+}
+.first-box h1 {
+  font-size: 1.15rem;
+  color: hsl(179, 62%, 43%);
+}
+.first-box h2 {
+  font-size: 0.95rem;
+  color: hsl(71, 73%, 54%);
+}
+.first-box p {
+  font-size: 0.95rem;
+  text-align: justify;
+  line-height: 1.3rem;
+  color: hsl(218, 22%, 67%);
+}
+
+/*? Second Box Styling */
+.second-box {
+  width: 100%;
+  background-color: rgb(94, 194, 194);
+}
+.second-box h1 {
+  color: white;
+  font-size: 1.15rem;
+}
+.second-box h2 {
+  color: white;
+  font-size: 1.85rem;
+}
+.second-box h2 span {
+  color: white;
+  font-size: 0.95rem;
+  opacity: 50%;
+}
+.second-box h3 {
+  color: white;
+  font-size: 1rem;
+  opacity: 85%;
+}
+.second-box button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  font-family: "Karla-bold";
+  background-color: hsl(71, 73%, 54%);
+}
+
+/*? Third Box Styling */
+.third-box {
+  width: 100%;
+  color: white;
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(120, 214, 214);
+}
+.third-box h1 {
+  font-size: 1.15rem;
+  margin-bottom: 0.25em;
+}
+.third-box ul {
+  gap: 0.25rem;
+  display: flex;
+  list-style: none;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.third-box li {
+  opacity: 85%;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  .first-container {
+    width: 320px;
+  }
+}
+
+@media (min-width: 760px) {
+  .second-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .first-box,
+  .second-box,
+  .third-box {
+    padding: 2rem 2rem;
+  }
+  .first-container {
+    width: 640px;
+  }
+  .second-box {
+    border-radius: 0 0 0 10px;
+  }
+  .third-box {
+    border-radius: 0 0 10px 0;
+  }
+  .first-box {
+    gap: 0.9rem;
+  }
+  .first-box h1 {
+    font-size: 1.35rem;
+  }
+  .first-box h2 {
+    font-size: 1.1rem;
+  }
+  .first-box p {
+    font-size: 1rem;
+    line-height: 1.65rem;
+  }
+}
